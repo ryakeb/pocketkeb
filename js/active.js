@@ -114,13 +114,16 @@
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
+
+        var filter = $(this).data('filter').substring(1); // remove the leading "."
+        $('.portfolio-submenu').hide().filter('.' + filter).show();
     })
 
     // Masonary Gallery Active Code
     if ($.fn.imagesLoaded) {
         $('.portfolio-column').imagesLoaded(function () {
             // filter items on button click
-            $('.portfolio-menu').on('click', 'button', function () {
+            $('.portfolio-menu, .portfolio-submenu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
