@@ -8,3 +8,23 @@
     ---------------------------------------------------------- */
 
     /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
+
+    .portfolio-submenu .btn {
+        background: none;
+        /* Enlève le fond gris */
+        margin: 0 10px;
+        /* Espace les boutons avec une marge de 10px de chaque côté */
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .portfolio-submenu .btn {
+            font-size: 14px;
+        }
+    }
+    
+    /* Règle de média pour les écrans mobiles */
+    @media screen and (max-width: 767px) {
+        .portfolio-submenu .btn {
+            font-size: 12px;
+        }
+    }
