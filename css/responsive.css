@@ -396,7 +396,7 @@
     .carousel-item.h-100.bg-img {
         background-position: center;
         /* Centrer l'image */
-        background-size: cover;
+        background-size:cover;
         /* Ajuster l'image pour qu'elle couvre toute la zone */
     }
 }

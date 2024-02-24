@@ -110,35 +110,41 @@
         });
     }
 
-    // Gallery Menu Style Active Code
-    $('.portfolio-menu button.btn').on('click', function () {
-        $('.portfolio-menu button.btn').removeClass('active');
-        $(this).addClass('active');
+ // Gallery Menu Style Active Code
+$('.portfolio-menu button.btn').on('click', function () {
+    $('.portfolio-menu button.btn').removeClass('active');
+    $(this).addClass('active');
 
-        var filter = $(this).data('filter').substring(1); // remove the leading "."
-        $('.portfolio-submenu').hide().filter('.' + filter).show();
-    })
+    var filter = $(this).data('filter').substring(1); // remove the leading "."
+    $('.portfolio-submenu').hide().filter('.' + filter).show();
+})
 
-    // Masonary Gallery Active Code
-    if ($.fn.imagesLoaded) {
-        $('.portfolio-column').imagesLoaded(function () {
-            // filter items on button click
-            $('.portfolio-menu, .portfolio-submenu').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            // init Isotope
-            var $grid = $('.portfolio-column').isotope({
-                itemSelector: '.column_single_gallery_item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.column_single_gallery_item'
-                }
+// Masonary Gallery Active Code
+if ($.fn.imagesLoaded) {
+    $('.portfolio-column').imagesLoaded(function () {
+        // filter items on button click
+        $('.portfolio-menu, .portfolio-submenu').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            if(filterValue == ".services") {
+                filterValue = ".weddings, .families, .mumtobe, .portraits";
+            }
+            if(filterValue == ".themes") {
+                filterValue = ".go, .espace, .teardrop"; // replace with your actual theme classes
+            }
+            $grid.isotope({
+                filter: filterValue
             });
         });
-    }
+        // init Isotope
+        var $grid = $('.portfolio-column').isotope({
+            itemSelector: '.column_single_gallery_item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.column_single_gallery_item'
+            }
+        });
+    });
+}
 
     // Progress Bar Active Code
     if ($.fn.barfiller) {
