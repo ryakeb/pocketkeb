@@ -62,7 +62,7 @@
 
     #studioMenu {
         padding: 30px;
-        background-color: #1d1d1d;
+        background-color: transparent;
         z-index: 1002;
     }
 
@@ -167,7 +167,7 @@
 
     #studioMenu {
         padding: 20px;
-        background-color: #1d1d1d;
+        background-color:transparent;
         z-index: 1002;
     }
 
