@@ -27,4 +27,17 @@
         .portfolio-submenu .btn {
             font-size: 12px;
         }
+        .blog-title {
+            font-size: 17px;
+        }
+        .blog-p {
+            font-size:small;
+        }
+        .blog-quote {
+            font-size: 13px;
+        }
+        .blog_item {
+            padding: 0 15px; /* Un peu de padding sur les petits écrans */
+        }
+        
     }
