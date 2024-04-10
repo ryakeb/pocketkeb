@@ -33,7 +33,7 @@
                 </svg>
             </div>
         </div>
-        <div class="questions-area text-center">
+        <!-- <div class="questions-area text-center">
             <p>Did you know?</p>
             <ul>
                 <li>The largest photography competition is 353,768 entries.</li>
@@ -42,7 +42,7 @@
                 <li>The world’s largest photo mosaic featured 176,175 pictures.</li>
                 <li>The world’s largest camera lens was a 5200mm lens attached to a canon.</li>
             </ul>
-        </div>
+        </div> -->
     </div>
 
     <!-- Gradient Background Overlay -->
@@ -57,7 +57,8 @@
                         <nav class="navbar h-100 navbar-expand-lg">
                             <!-- Logo Area  -->
                             <a class="navbar-brand" href="index.html">
-                                <img src="img/logo3-transp.png" alt="Logo" style="width: 90px; height: 90px; border-radius: 70%;">
+                                <img src="img/logo3-transp.png" alt="Logo"
+                                    style="width: 90px; height: 90px; border-radius: 70%;">
                             </a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -71,14 +72,14 @@
                                         <a class="nav-link" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="blog.html">Blog</a>
+                                        <a class="nav-link" href="blog.html">Blog<span
+                                                class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-me.html">About<span
-                                                class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="about-me.html">About</a>
                                     </li>
                                 </ul>
                             </div>
@@ -101,70 +102,85 @@
 
             <a href="#" data-toggle="tooltip" data-placement="right" title="Pinterest"><i class="fa fa-pinterest"
                     aria-hidden="true"></i> <span>Pinterest</span></a>
-            <a href="https://www.behance.net/hindekeb" data-toggle="tooltip" data-placement="right" title="Behance"><i class="fa fa-behance"
-                    aria-hidden="true"></i> <span>Behance</span></a>
+            <a href="https://www.behance.net/hindekeb" data-toggle="tooltip" data-placement="right" title="Behance"><i
+                    class="fa fa-behance" aria-hidden="true"></i> <span>Behance</span></a>
         </div>
     </div>
     <!-- Social Sidebar Area End -->
 
-    <!-- About Me Area Start -->
-    <section class="about-me-area mt-100 section_padding_100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="about-me-thumb">
-                        <img src="img/pocketimage/starbg.jpeg" alt="">
+    <!-- Blog Area Start -->
+    <div class="gallery_area clearfix">
+        <div class="container-fluid clearfix">
+            <div class="gallery_menu">
+                <div class="portfolio-menu">
+                    <button class="active btn" type="button" data-filter="*">All</button>
+                    <button class="btn" type="button" data-filter=".archives">#Archives</button>
+                    <button class="btn" type="button" data-filter=".exhibition">#Exhibition</button>
+                </div>
+            </div>
+            <div class="row portfolio-column">
+                <!-- archives -->
+                <!-- Single Item -->
+                <div class="column_single_gallery_item archives">
+                    <div class="blog_item">
+                        <h2 class="blog-title">La Vérité de l’Amour</h2>
+                        <p class="blog-p">“Que la lumière du soleil ne soit pas obscurcie par l’aveuglement de l’œil de celui qui refuse de voir.”<br>— Shams de Tabriz -</p>
+                    <div class="blog-image">
+                        <img src="img/blog/archives/arch1.jpg" alt="">
+                    </div>
+                    <br>
+                        <blockquote class="blog-quote">Nous vivons dans une société dans laquelle nous avons tous un rôle bien défini. L’image que l’on projette de soi n’est autre qu’une interprétation au travers des yeux de chacun.</blockquote><br>
+                        <blockquote class="blog-quote">Y compris de soi.</blockquote><br>
+                        <blockquote class="blog-quote">Mon Moi à travers moi. <br>
+                        Mon Moi intérieur qui vit parmi le Nous.</blockquote><br> 
+                        <blockquote> Pour le Nous dans certain cas. <br>
+                        Jusqu’à ne plus avoir de Moi.</blockquote><br>
+                        <blockquote>Dans le seul et unique but de trouver la Vérité.<br> 
+                        La Vérité de l’Amour.</blockquote>
                     </div>
                 </div>
-                <div class="col-10">
-                    <div class="about-content mt-100 mb-100 text-center">
-                        <span></span>
-                        <h2>A blog will be here</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper
-                            finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                            vulputate id justo quis facilisis. Vestibulum id orci ligula. Sed tempor, nunc ut sodales
-                            pulvinar, mauris ante euismod magna, at elementum lectus leo sed enim. Praesent dictum
-                            suscipit tincidunt. Nulla facilisi. Aenean in mollis orci. Ut interdum vulputate ante a
-                            egestas. Pellentesque varius purus malesuada arcu semper vehicula.</p>
+                <!-- end archives -->
+                
+                <!-- exhibition -->
+                <!-- Single Item -->
+                <div class="column_single_gallery_item exhibition">
+                    <div class="blog_item">
+                        <h2 class="blog-title">KINTSUGI </h2>
+                        <p class="blog-p">“The wound is the place where the Light enters you.” <br>– Djalâl ad-Dîn Rûmî - </p>
+                    <div class="blog-image">
+                        <img src="img/blog/exhibition/exhi1.jpg" alt="">
+                    </div>
+                        <blockquote class="blog-quote">L’humanité, dans toute sa splendeur et sa complexité, est un chef-d’œuvre d’imperfections qui se tissent harmonieusement pour former une perfection singulière. C’est dans la nature même de l’Homme d’être imparfait, de porter en lui des fissures et des failles qui, loin d’être des défauts, sont les fils invisibles tissant la trame de sa grandeur. </blockquote><br>
+                        <blockquote class="blog-quote">L’ambition de cette exposition est dans un premier temps de rendre hommage à des blessures qui ont tracées la vie de ces différents portraits, tout en faisant un parallèle avec le Kintsugi. Cet art Japonais ancestral qui invite à réparer un objet cassé en soulignant ses cicatrices de poudre d’or, au lieu de les cacher. Réparé, consolidé, embelli, il porte fièrement ses blessures, et il devient. Paradoxalement d’autant plus précieux qu’il a été brisé… </blockquote><br>
+                        <blockquote class="blog-quote">En fin de compte, c’est la fragilité de l’humanité qui la rend riche et éternellement fascinante. Les imperfections ne sont pas des obstacles à la perfection, mais plutôt les éléments qui la définissent. C’est dans la danse délicate entre lumière et ombre que l’Homme trouve sa véritable splendeur, créant un chef-d’œuvre toujours en évolution, toujours inachevé, mais infiniment inestimable.</blockquote>
                     </div>
                 </div>
-                <!-- <div class="col-10">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="single-service-area section_padding_0_100 text-center wow fadeInUp"
-                                data-wow-delay="0.1s">
-                                <img src="img/core-img/heart.png" alt="">
-                                <h5>Wedding Photography</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis
-                                    semper finibus ac eget ipsum. Lorem ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="single-service-area section_padding_0_100 text-center wow fadeInUp"
-                                data-wow-delay="0.4s">
-                                <img src="img/core-img/photo-camera.png" alt="">
-                                <h5>Families Photography</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis
-                                    semper finibus ac eget ipsum. Lorem ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="single-service-area section_padding_0_100 text-center wow fadeInUp"
-                                data-wow-delay="0.9s">
-                                <img src="img/core-img/video-camera.png" alt="">
-                                <h5>Pregrancy Photography</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis
-                                    semper finibus ac eget ipsum. Lorem ipsum.</p>
-                            </div>
-                        </div>
+                <!-- Single Item -->
+                <div class="column_single_gallery_item exhibition">
+                    <div class="blog_item">
+                        <h2 class="blog-title">SE VÊTIR D’ESPACE</h2>
+                        <p class="blog-p">« L’art est à l’homme, ce que la nature est à Dieu. » <br>– Victor Hugo  -</p>
+                    <div class="blog-image">
+                        <img src="img/blog/exhibition/exhi2.jpg" alt="">
+                    </div>
+                        <blockquote class="blog-quote">En tant qu’homme nous figeons l’art dans le temps alors que l’art de la nature est en constant changement.</blockquote>
+                        <blockquote>Une beauté qui nous dépasse de par sa pureté. Son authenticité. Combien d’entre nous ne sont pas restés à admirer les vagues de la mer ? D’aucune n’est semblable. Ce qui les rend unique, tout en faisant partie d’un tout.</blockquote>
+                        <blockquote>Cela en va de même pour nous en tant qu’être. Cet art nous influence, ainsi que nos appartenances, tantôt directes ou indirectes. Qu’elles soient culturelles, sociales, spirituelles, artistiques…</blockquote>
+                        <blockquote>L’ambition de l’exposition est de montrer les affinités qui nous définissent au quotidien, qu’elles soient communautaires et/ou individuelles. Se vêtir d’espace met également l’accent sur les points communs qui nous relient à ce qui était à la base l’art de Dieu, c’est à dire la création de la matière, le temps & l’espace. Le projet a ainsi été conçu sous forme de décomposition des différents mécanismes que nous avons au travers de nos diverses appartenances vers l’origine qui est la nature. L’art de Dieu.</blockquote>
                     </div>
                 </div>
-                <div class="col-10"> -->
-
+            
+                <!-- end exhibition -->
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-70">
+                    <!-- <a href="#" class="btn studio-btn"><img src="img/core-img/logo-icon.png" alt=""> Load More</a> -->
+                </div>
             </div>
         </div>
-    </section>
-    <!-- About Me Area End -->
+    </div>
+    <!-- Project Area End -->
+    <!-- Blog Area End -->
 
     <!-- Follow Me Instagram Area Start -->
     <section class="follow-me-instagram-area clearfix">

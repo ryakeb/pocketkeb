@@ -146,6 +146,38 @@ if ($.fn.imagesLoaded) {
     });
 }
 
+// Blog Menu Active Code
+// $('.blog-menu button.btn').on('click', function () {
+//     $('.blog-menu button.btn').removeClass('active');
+//     $(this).addClass('active');
+
+//     var filter = $(this).data('filter'); // No need to remove the leading ".", Isotope can handle it
+//     $('.blog-column').isotope({
+//         filter: filter
+//     });
+// });
+
+// // Isotope for Blog Posts
+// if ($.fn.imagesLoaded) {
+//     $('.blog-column').imagesLoaded(function () {
+//         // Initialize Isotope for blog posts
+//         var $grid = $('.blog-column').isotope({
+//             itemSelector: '.column_single_blog_item',
+//             percentPosition: true,
+//             masonry: {
+//                 columnWidth: '.column_single_blog_item'
+//             }
+//         });
+
+//         // On button click, filter items
+//         $('.blog-menu').on('click', 'button', function () {
+//             var filterValue = $(this).attr('data-filter');
+//             $grid.isotope({ filter: filterValue });
+//         });
+//     });
+// }
+
+
     // Progress Bar Active Code
     if ($.fn.barfiller) {
         $('#bar1').barfiller({
